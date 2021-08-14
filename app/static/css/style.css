@@ -1,0 +1,30 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.custom-button:hover {
+  color: #ffffff;
+}
+
+.custom-button.active {
+  font-weight: 500;
+}
+.navbar-custom {
+  padding-bottom: 100px;
+}
+.custom-footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+
+}
+.custom-search {
+  padding-top: 100px;
+  padding-left: 428px;
+}

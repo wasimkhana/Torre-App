@@ -1,11 +1,15 @@
 from flask import render_template, url_for
 from app import app
-
+import requests
+import json
 
 @app.route('/')
-def hello_world():
+@app.route('/about')
+def about():
     """
-    hello_world function to test route.
-    return: layout.html
+    about method is to show the data from api
+    return: layout.html, api_data
     """
-    return render_template("layout.html")
+    req = requests.get('https://torre.bio/api/bios/wasimkhanak5')
+    api_data=json.loads(req.content)
+    return render_template("about.html", data=api_data, title='About')
