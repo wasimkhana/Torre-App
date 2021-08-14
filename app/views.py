@@ -1,3 +1,4 @@
+from flask import render_template, url_for
 from app import app
 
 
@@ -5,6 +6,6 @@ from app import app
 def hello_world():
     """
     hello_world function to test route.
-    return: 'Hello World!'
+    return: layout.html
     """
-    return 'Hello World!'
+    return render_template("layout.html")
